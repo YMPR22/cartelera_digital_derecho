@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera Digital - Estudio de Caso | Juan Pérez</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #1a365d;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #2b6cb0;
+            display: inline-block;
+        }
+
+        .caso-resumen {
+            background: #ebf8ff;
+            border-left: 5px solid #2b6cb0;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background: #2b6cb0;
+            color: white;
+            padding: 14px 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        tr:nth-child(even) {
+            background: #f7fafc;
+        }
+
+        tr:hover {
+            background: #edf2f7;
+        }
+
+        .total-box {
+            background: #c6f6d5;
+            border: 2px solid #38a169;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 25px 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #22543d;
+        }
+
+        .conclusiones {
+            background: #fffaf0;
+            border-left: 5px solid #dd6b20;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .conclusiones ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .recomendaciones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .rec-card {
+            background: #ebf8ff;
+            border-radius: 10px;
+            padding: 18px;
+            text-align: center;
+            border: 1px solid #bee3f8;
+        }
+
+        .rec-card strong {
+            display: block;
+            color: #2b6cb0;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        footer {
+            background: #1a365d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            .content { padding: 25px 15px; }
+            table { font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cartelera Digital – Estudio de Caso</h1>
+            <p>Vulneración de Derechos Laborales | Juan Pérez – Agroindustria La Esperanza S.A.S.</p>
+            <p style="margin-top: 8px; font-size: 0.95rem;">Evidencia GA11-210201501-AA3-EV02</p>
+        </header>
+
+        <div class="content">
+            <!-- Resumen del caso -->
+            <div class="section">
+                <h2>1. Resumen del Caso</h2>
+                <div class="caso-resumen">
+                    <p><strong>Trabajador:</strong> Juan Pérez &nbsp;|&nbsp; <strong>Cargo:</strong> Auxiliar de bodega</p>
+                    <p><strong>Empresa:</strong> Agroindustria La Esperanza S.A.S.</p>
+                    <p><strong>Vinculación:</strong> Contrato verbal a término indefinido (enero – diciembre 2025) – 12 meses</p>
+                    <p><strong>Salario recibido:</strong> $1.200.000 mensuales (inferior al SMMLV)</p>
+                    <p><strong>Jornada:</strong> Lunes a sábado de 7:00 a.m. a 7:00 p.m. (12 horas diarias) + 3 domingos al mes</p>
+                </div>
+            </div>
+
+            <!-- Derechos vulnerados -->
+            <div class="section">
+                <h2>2. Derechos Laborales que NO se cumplen</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Derecho vulnerado</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Salario mínimo legal</td><td>Recibió $1.200.000 (inferior al SMMLV vigente)</td></tr>
+                        <tr><td>2</td><td>Auxilio de transporte</td><td>Nunca fue pagado</td></tr>
+                        <tr><td>3</td><td>Jornada máxima legal</td><td>Trabajó 12 horas diarias (exceso de 4 horas)</td></tr>
+                        <tr><td>4</td><td>Horas extras</td><td>4 horas extras diarias no reconocidas ni pagadas</td></tr>
+                        <tr><td>5</td><td>Recargo dominical</td><td>3 domingos al mes sin el recargo del 75%</td></tr>
+                        <tr><td>6</td><td>Prima de servicios</td><td>No se pagó en junio ni en diciembre</td></tr>
+                        <tr><td>7</td><td>Cesantías</td><td>No se consignaron</td></tr>
+                        <tr><td>8</td><td>Intereses sobre cesantías</td><td>No se pagaron (12% anual)</td></tr>
+                        <tr><td>9</td><td>Dotación de trabajo</td><td>No se entregó</td></tr>
+                        <tr><td>10</td><td>Seguridad Social</td><td>No afiliado los primeros 6 meses</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cuantías -->
+            <div class="section">
+                <h2>3. Cuantías Aproximadas Adeudadas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Valor aproximado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Diferencia salarial vs SMMLV</td><td>$2.682.000</td></tr>
+                        <tr><td>Auxilio de transporte (12 meses)</td><td>$1.944.000 – $2.400.000</td></tr>
+                        <tr><td>Horas extras (4 h/día)</td><td>$4.800.000 – $5.500.000</td></tr>
+                        <tr><td>Recargo dominical (3 domingos/mes)</td><td>$1.350.000 – $1.700.000</td></tr>
+                        <tr><td>Prima de servicios</td><td>$1.200.000</td></tr>
+                        <tr><td>Cesantías + Intereses</td><td>$1.344.000</td></tr>
+                        <tr><td>Dotación</td><td>$300.000 – $450.000</td></tr>
+                        <tr><td>Aportes a Seguridad Social (6 meses)</td><td>$1.800.000 – $2.200.000</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="total-box">
+                    Total aproximado adeudado: <strong>$15.500.000 – $17.500.000</strong>
+                </div>
+            </div>
+
+            <!-- Conclusiones -->
+            <div class="section">
+                <h2>4. Conclusiones</h2>
+                <div class="conclusiones">
+                    <ul>
+                        <li>La empresa incumplió de forma sistemática derechos fundamentales e irrenunciables del trabajador.</li>
+                        <li>El contrato verbal no exonera al empleador de cumplir la legislación laboral (principio de primacía de la realidad).</li>
+                        <li>La falta de afiliación a seguridad social durante 6 meses puso en riesgo la salud y el futuro pensional de Juan Pérez.</li>
+                        <li>Se configuró una clara situación de precarización laboral.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Recomendaciones -->
+            <div class="section">
+                <h2>5. Recomendaciones</h2>
+                <div class="recomendaciones">
+                    <div class="rec-card">
+                        <strong>1. Derecho de Petición</strong>
+                        Solicitar formalmente el pago de todo lo adeudado.
+                    </div>
+                    <div class="rec-card">
+                        <strong>2. Acción de Tutela</strong>
+                        Proteger derechos fundamentales si no hay respuesta.
+                    </div>
+                    <div class="rec-card">
+                        <strong>3. Ministerio del Trabajo</strong>
+                        Presentar denuncia por vulneración de derechos laborales.
+                    </div>
+                    <div class="rec-card">
+                        <strong>4. Demanda Laboral</strong>
+                        Reclamar el pago total de las cuantías ante un juez.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Evidencia GA11-210201501-AA3-EV02 &nbsp;|&nbsp; Foro Estudio de Caso<br>
+            Competencia: Ejercer Derechos Fundamentales en el Trabajo
+        </footer>
+    </div>
+</body>
+</html>
